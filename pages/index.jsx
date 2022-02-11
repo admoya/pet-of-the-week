@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 
 const desiredIntroduction = 'This week\'s pet of the week is...';
 
-const petOfTheWeek = 'Tommy';
+const petOfTheWeek = 'Rusty';
 
 export default function Home() {
   const [introduction, setIntroduction] = useState('');
@@ -47,12 +47,12 @@ export default function Home() {
 
         <div className={styles.pictureFrame}>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/pet-of-the-week.appspot.com/o/tommy.jpg?alt=media&token=aeb9b495-ad0d-49ce-9dfe-cdb28d9ba8cf"
-            alt="Picture of Tommy, the Pet of the Week!"
+            src={`https://pet-of-the-week.s3.amazonaws.com/${petOfTheWeek.toLowerCase()}.jpg`}
+            alt={`Picture of ${petOfTheWeek}, the Pet of the Week!`}
             priority
             layout="fill"
             objectFit="cover"
-            class={!potw ? styles.pictureHidden : ''}
+            className={!potw ? styles.pictureHidden : ''}
           />
         </div>
       </main>
