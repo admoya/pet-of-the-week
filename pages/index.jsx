@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/page.module.css';
 
 const desiredIntroduction = 'This week\'s pet of the week is...';
 
@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className={styles.pictureFrame}>
           <Image
-            src={`https://pet-of-the-week.s3.amazonaws.com/${petOfTheWeek.toLowerCase()}.jpg`}
+            src={`https://firebasestorage.googleapis.com/v0/b/pet-of-the-week.appspot.com/o/${petOfTheWeek.toLowerCase()}.jpg?alt=media`}
             alt={`Picture of ${petOfTheWeek}, the Pet of the Week!`}
             priority
             layout="fill"
