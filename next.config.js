@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  pageExtensions: ['jsx'],
+  pageExtensions: ['tsx', 'ts'],
   images: {
     domains: ['firebasestorage.googleapis.com', 'pet-of-the-week.s3.amazonaws.com'],
   },

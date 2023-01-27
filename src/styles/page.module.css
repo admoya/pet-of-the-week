@@ -74,6 +74,23 @@
   display: none !important;
 }
 
+.header {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navLinks {
+  padding: .5rem;
+}
+
+.navLink {
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
 /* Move it (define the animation) */
 @keyframes flyFromBottom {
   0%   {

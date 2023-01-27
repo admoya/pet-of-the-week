@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import styles from '../styles/page.module.css';
+import styles from '../../styles/page.module.css';
 
 const desiredIntroduction = 'This week\'s pet of the week is...';
 
